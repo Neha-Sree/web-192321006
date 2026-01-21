@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table with Colored Sections</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+        }
+        thead th {
+            color: green;
+            font-weight: bold;
+        }
+        tbody td {
+            color: blue;
+        }
+
+        tfoot td {
+            color: red;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Table with Header, Body, Footer Colors</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th class="roll">Month</th>
+            <th>Savings</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="roll">Jan</td>
+            <td>100</td>
+            
+        </tr>
+        <tr>
+            <td class="roll">Feb</td>
+            <td>200</td>
+            
+        </tr>
+        <tr>
+            <td class="roll">March</td>
+            <td>300</td>
+        </tr>
+    </tbody>	
+    <tfoot>
+        <tr>
+            <td class="roll">Sum</td>
+            <td>500</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>

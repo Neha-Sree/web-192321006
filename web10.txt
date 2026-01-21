@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table with Colored Sections</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Header font red */
+        thead th {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Body font blue */
+        tbody td {
+            color: blue;
+        }
+
+        /* Footer font red */
+        tfoot td {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Optional: first column background blue */
+        .roll {
+            background-color: #00b0f0;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Table with Header, Body, Footer Colors</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th class="roll">Roll-No</th>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="roll">1</td>
+            <td>Bhavana</td>
+            <td>Nashik</td>
+        </tr>
+        <tr>
+            <td class="roll">2</td>
+            <td>Amit</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td class="roll">3</td>
+            <td>Neha</td>
+            <td>Mumbai</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td class="roll">Total</td>
+            <td>3 Students</td>
+            <td>-</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>
