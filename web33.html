@@ -1,0 +1,10 @@
+<script>
+function check(){
+if(document.f.name.value==""){alert("Enter Name"); return false;}
+}
+</script>
+
+<form name="f" onsubmit="return check()">
+Name:<input name="name">
+<input type="submit">
+</form>

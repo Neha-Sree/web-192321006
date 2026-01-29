@@ -1,0 +1,9 @@
+<form method="post">
+Name:<input name="name">
+<input type="submit">
+</form>
+
+<%
+if(request.getParameter("name")!=null)
+out.println("Employee: "+request.getParameter("name"));
+%>

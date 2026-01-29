@@ -1,0 +1,11 @@
+public class DishServlet extends HttpServlet {
+public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
+PrintWriter out = res.getWriter();
+String[] dishes = req.getParameterValues("dish");
+
+out.println("<h2>Confirmed Dishes</h2>");
+for(String d:dishes){
+out.println(d+"<br>");
+}
+}
+}
